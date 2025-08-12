@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "2b3c4a0c-05f1-4513-902e-c2ccc20f5be2",
+		"name": "Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "45773708",
+		"_collection_link": "https://behruz-3796625.postman.co/workspace/Behruz's-Workspace~12555259-3137-4a1e-8f79-4806d989b0cd/collection/45773708-2b3c4a0c-05f1-4513-902e-c2ccc20f5be2?action=share&source=collection_link&creator=45773708"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "createUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"title\": \"Adventures of Huckleberry Finn\", \"authorId\": 5, \"userId\": 5 }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/v1/users"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"title\": \"Adventures of Huckleberry Finn\", \"authorId\": 5, \"userId\": 5 }"
+						},
+						"url": "localhost:3000/api/v1/users"
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"title\": \"Adventures of Huckleberry Finn\", \"authorId\": 5, \"userId\": 5 }"
+						},
+						"url": "localhost:3000/api/v1/users/5"
+					},
+					"response": []
+				},
+				{
+					"name": "updateUserById",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ethan Hunt\",\r\n    \"email\": \"ethanboy@example.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/v1/users/5"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUserById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ethan Hunt\",\r\n    \"email\": \"ethanboy@example.com\"\r\n    }"
+						},
+						"url": "localhost:3000/api/v1/users/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "authors",
+			"item": [
+				{
+					"name": "getAllAuthors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ethan Hunt\",\r\n    \"email\": \"ethanboy@example.com\"\r\n    }"
+						},
+						"url": "localhost:3000/api/v1/authors"
+					},
+					"response": []
+				},
+				{
+					"name": "getAuthorById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ethan Hunt\",\r\n    \"email\": \"ethanboy@example.com\"\r\n    }"
+						},
+						"url": "localhost:3000/api/v1/authors/2"
+					},
+					"response": []
+				},
+				{
+					"name": "updateUserById",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"George R.R. Martin\",\r\n    \"email\": \"george.martin@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/v1/authors/2"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUserById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"George R.R. Martin\",\r\n    \"email\": \"george.martin@example.com\"\r\n}"
+						},
+						"url": "localhost:3000/api/v1/authors/2"
+					},
+					"response": []
+				},
+				{
+					"name": "createAuthor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n    \"name\": \"George R.R. Martin\",\r\n    \"email\": \"george.martin@example.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/v1/authors"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "books",
+			"item": [
+				{
+					"name": "createBook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"The Great Gatsby\",\r\n  \"authorId\": 3,\r\n  \"userId\": 3\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/v1/books"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"The Great Gatsby\",\r\n  \"authorId\": 3,\r\n  \"userId\": 3\r\n}\r\n"
+						},
+						"url": "localhost:3000/api/v1/books"
+					},
+					"response": []
+				},
+				{
+					"name": "getBookById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"The Great Gatsby\",\r\n  \"authorId\": 3,\r\n  \"userId\": 3\r\n}\r\n"
+						},
+						"url": "localhost:3000/api/v1/books/3"
+					},
+					"response": []
+				},
+				{
+					"name": "updateBookById",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"The Great Gatsby\",\r\n  \"authorId\": 3,\r\n  \"userId\": 3\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/v1/books/6"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBookById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"The Great Gatsby\",\r\n  \"authorId\": 3,\r\n  \"userId\": 3\r\n}\r\n"
+						},
+						"url": "localhost:3000/api/v1/books/6"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
